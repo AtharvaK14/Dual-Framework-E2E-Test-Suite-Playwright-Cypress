@@ -1,0 +1,25 @@
+{
+  "name": "dual-framework-e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pw:test": "npx playwright test --config=playwright/playwright.config.ts",
+    "pw:test:headed": "npx playwright test --config=playwright/playwright.config.ts --headed",
+    "pw:report": "npx playwright show-report playwright/playwright-report",
+    "cy:open": "npx cypress open",
+    "cy:run": "npx cypress run",
+    "test:all": "npm run pw:test && npm run cy:run",
+    "lint": "npx tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0",
+    "cypress": "^15.13.1",
+    "dotenv": "^17.4.2",
+    "typescript": "^6.0.2"
+  }
+}

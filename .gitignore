@@ -1,0 +1,8 @@
+node_modules/
+dist/
+playwright/playwright-report/
+playwright/test-results/
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+*.env
