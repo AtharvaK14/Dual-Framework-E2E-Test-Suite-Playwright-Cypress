@@ -44,7 +44,7 @@ test.describe('Shopping Cart', () => {
 
     inventoryPage = new InventoryPage(page);
     await inventoryPage.goToCart();
-    // SauceDemo does NOT persist cart across sessions
-    await cartPage.expectCartEmpty();
+    // SauceDemo persists cart state in the browser session
+    await cartPage.expectItemInCart('Sauce Labs Backpack');
   });
 });
