@@ -1,6 +1,6 @@
 # Dual-Framework E2E Test Suite
 
-[![E2E Tests](https://github.com/AtharvaK14/dual-framework-e2e/actions/workflows/e2e-tests.yml/badge.svg)](https://github.com/AtharvaK14/dual-framework-e2e/actions/workflows/e2e-tests.yml)
+[![E2E Tests](https://github.com/AtharvaK14/Dual-Framework-E2E-Test-Suite-Playwright-Cypress/blob/main/.github/workflows/e2e-tests.ymlbadge.svg)](https://github.com/AtharvaK14/Dual-Framework-E2E-Test-Suite-Playwright-Cypress/blob/main/.github/workflows/e2e-tests.yml)
 ![Playwright](https://img.shields.io/badge/Playwright-2EAD33?logo=playwright&logoColor=white)
 ![Cypress](https://img.shields.io/badge/Cypress-69D3A7?logo=cypress&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
