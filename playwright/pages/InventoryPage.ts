@@ -56,6 +56,7 @@ export class InventoryPage {
 
   async logout() {
     await this.menuButton.click();
+    await this.logoutLink.waitFor({ state: 'visible' });
     await this.logoutLink.click();
   }
 }

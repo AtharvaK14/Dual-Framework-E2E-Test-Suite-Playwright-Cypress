@@ -36,7 +36,6 @@ test.describe('Shopping Cart', () => {
   });
 
   test('should persist cart items after logout and login', async ({ page }) => {
-    // Note: SauceDemo may or may not persist cart. This test documents the behavior.
     await inventoryPage.addItemToCart('Sauce Labs Backpack');
     await inventoryPage.logout();
 
@@ -45,7 +44,7 @@ test.describe('Shopping Cart', () => {
 
     inventoryPage = new InventoryPage(page);
     await inventoryPage.goToCart();
-    // Document actual behavior: does cart persist or not?
-    // This is a VALID test even if it "fails" because it documents a behavior gap
+    // SauceDemo does NOT persist cart across sessions
+    await cartPage.expectCartEmpty();
   });
 });
